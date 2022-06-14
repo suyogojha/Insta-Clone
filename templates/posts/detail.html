@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<title>{{ post.title }} | Platzigram</title>
+{% endblock %}
+
+{% block container %}
+
+<div class="container">
+    <div class="row">
+        {% include 'posts/post_card.html' %}
+    </div>
+</div>
+
+{% endblock %}
